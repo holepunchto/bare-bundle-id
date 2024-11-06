@@ -22,7 +22,7 @@ const bundle = new Bundle()
   .write('/bar.js', 'module.exports = 42')
 
 bundle.id = id(bundle).toString('hex')
-// 77a957bc...
+// 33824862...
 ```
 
 ## API
