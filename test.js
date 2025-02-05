@@ -4,11 +4,9 @@ const id = require('.')
 
 test('basic', (t) => {
   const bundle = new Bundle()
-    .write('/foo.js', 'module.exports = require(\'./bar\')', {
+    .write('/foo.js', "module.exports = require('./bar')", {
       main: true,
-      imports: {
-        './bar': '/bar.js'
-      }
+      imports: { './bar': '/bar.js' }
     })
     .write('/bar.js', 'module.exports = 42')
 
