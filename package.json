@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "Construct a unique ID for a bundle",
   "exports": {
-    ".": "./index.js",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
     "./package": "./package.json"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "npm run lint && npm run test:bare && npm run test:node",
     "test:bare": "bare test.js",
     "test:node": "node test.js",
-    "lint": "standard"
+    "lint": "prettier . --check"
   },
   "repository": {
     "type": "git",
@@ -29,11 +33,14 @@
     "sodium-native": "^4.2.1"
   },
   "peerDependencies": {
-    "bare-bundle": "^1.8.0"
+    "bare-buffer": "*",
+    "bare-bundle": "*"
   },
   "devDependencies": {
-    "bare-bundle": "*",
+    "bare-buffer": "^3.0.2",
+    "bare-bundle": "^1.8.0",
     "brittle": "^3.2.1",
-    "standard": "^17.0.0"
+    "prettier": "^3.4.2",
+    "prettier-config-standard": "^7.0.0"
   }
 }
