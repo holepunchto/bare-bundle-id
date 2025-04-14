@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/holepunchto/bare-bundle-id#readme",
   "dependencies": {
-    "sodium-native": "^4.2.1"
+    "sodium-native": "^5.0.1"
   },
   "peerDependencies": {
     "bare-buffer": "*",
