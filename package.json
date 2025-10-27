@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/holepunchto/bare-bundle-id#readme",
   "dependencies": {
+    "bare-crypto": "^1.12.0",
     "sodium-native": "^5.0.1"
   },
   "peerDependencies": {
@@ -41,6 +42,6 @@
     "bare-bundle": "^1.8.0",
     "brittle": "^3.2.1",
     "prettier": "^3.4.2",
-    "prettier-config-standard": "^7.0.0"
+    "prettier-config-holepunch": "^2.0.0"
   }
 }
