@@ -25,23 +25,9 @@ bundle.id = id(bundle).toString('hex')
 // 33824862...
 ```
 
-<!-- bare-refgen:api start -->
-
 ## API
 
-### Functions
-
-#### `id(bundle: Bundle): Buffer`
-
-Returns a 32-byte BLAKE2b hash of `bundle`'s sorted file entries (path, contents, and mode), uniquely identifying the bundle's contents.
-
-**Parameters**
-
-| Parameter | Type     | Default | Description                                                                                                                                                                                             |
-| --------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `bundle`  | `Bundle` | —       | The [`bare-bundle`](https://github.com/holepunchto/bare-bundle) instance to hash; its file entries are sorted by path before hashing, so the ID is stable regardless of the order they were written in. |
-
-<!-- bare-refgen:api end -->
+See the [full API reference](https://docs.pears.com/reference/bare/modules/bare-bundle-id).
 
 ## License
 
