@@ -27,7 +27,7 @@ bundle.id = id(bundle).toString('hex')
 
 ## API
 
-#### `const buffer = id(bundle)`
+See the [`bare-bundle-id` reference](https://docs.pears.com/reference/bare/modules/bare-bundle-id).
 
 ## License
 
