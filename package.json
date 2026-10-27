@@ -1,6 +1,6 @@
 {
   "name": "bare-bundle-id",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Construct a unique ID for a bundle",
   "exports": {
     ".": {
